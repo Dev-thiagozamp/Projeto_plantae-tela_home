@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 
@@ -45,7 +48,7 @@ header {
 }
 
 a {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-decoration: none;
   color: #fff;
 }
@@ -220,6 +223,7 @@ a {
   border: 5px solid #fff;
   border-radius: 999px;
   height: 48px;
+  cursor: pointer;
     
 }
 
@@ -254,15 +258,19 @@ a {
 }
 
 
-.texto h2 {
-    font-size: 3rem;
-    line-height: 1.2;
-    margin-bottom: 15px;
+h2 {
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.detalheh2 {
+  color: #B0D182;
 }
 
 .pargrafoUm  {
-    font-size: 1.2rem;
-    margin-bottom: 25px;
+    font-size: 16px;
+    margin-bottom: 12px;
     text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
 }
 
@@ -287,12 +295,12 @@ a {
 }
 
 .card {
-    flex: 1;
-    background: linear-gradient(180deg, #F5F3E6 0%, #FFFFFF 100%);
-    padding: 20px 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    text-align: left;
+  flex: 1;
+  background: linear-gradient(180deg, #F5F3E6 0%, #FFFFFF 100%);
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: left;
 }
 
 .card h3 {
@@ -314,9 +322,16 @@ a {
   text-align: left;
 }
 
+.textoVerde .textov h3 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
 .textoVerde .textov p {
-  font-size: 1.1rem;
+  font-size: 24px;
   color: #2C473E;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
 }
 
 
@@ -332,11 +347,70 @@ a {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px 0 #0000001A;
 }
 
 .arvore .texto2 {
   text-align: left;
   align-self: center;
+  color: #2C473E;
+}
+
+.arvore .texto2 h3 {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.arvore .texto2 hr {
+  width: 86px;
+  height: 5px;
+  background-color: #2C473E;
+  border-radius: 4px;
+}
+
+.arvore .texto2 p {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.arvore .texto2 .btn1 {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 10px;
+  background: linear-gradient(90deg, #2C473ECC 80%, #6B813A);
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  width: 200px;
+  height: 60px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border: 4px #FFFF solid;
+  box-shadow: 3px 6px 8px 0 #00000087;
+  
+}
+
+.arvore .texto2 .btn1 .iconPlantar {
+  border: 4px #FFFF solid;
+  width: 72px;
+  height: 60px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-shadow: 3px 4px 4px 0 #00000087;
+  justify-content: flex-start;
+  position: absolute;
+  left: -5px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url("ArvoreBranca.png");
+  background-size: 22px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .arvore .imgemArvore img {
@@ -347,15 +421,23 @@ display: block;
 
 .texto2 h6 {
   color: #2C473E;;
-  font-size: 0.9rem;
-  font-weight: bold;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   margin-bottom: 5px;
+  background-color: #6A8E4E38;
+  width: 136px;
+  height: 30px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
 
 .mapaVerde{
-display: grid;
+  display: grid;
   grid-template-columns:  1fr 1fr;
   justify-content: center;
   align-items: center;
@@ -364,8 +446,83 @@ display: grid;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  margin-top: 32px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px 0 #0000001A;
 }
 
+.mapaVerde .textoMapa h6 {
+  color: #2C473E;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  margin-bottom: 5px;
+  background-color: #6A8E4E38;
+  width: 136px;
+  height: 30px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mapaVerde .textoMapa h3 {
+  font-size: 50px;
+  font-weight: 600;
+  color: #2C473E;
+}
+
+.mapaVerde .textoMapa hr {
+  width: 86px;
+  height: 5px;
+  background-color: #2C473E;
+  border-radius: 4px;
+}
+
+.mapaVerde .textoMapa p {
+  font-family: 'Roboto' sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #2C473E;
+}
+
+.mapaVerde .textoMapa .btn2 {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 10px;
+  background: linear-gradient(90deg, #2C473ECC 20%, #6B813A);
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  width: 182px;
+  height: 50px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  border: 4px #FFFF solid;
+  box-shadow: 3px 6px 8px 0 #00000087;
+}
+
+.mapaVerde .textoMapa .btn2 .iconExplorar {
+  border: 4px #FFFF solid;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 3px 4px 4px 0 #00000087;
+  justify-content: flex-start;
+  position: absolute;
+  left: -5px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url("IconExplorar.svg");
+  background-size: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 .Quiz {
   display: grid;
@@ -377,8 +534,84 @@ display: grid;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  margin-top: 32px;
+  margin-bottom: 119px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px 0 #0000001A;
 }
 
+.Quiz .quizTexto h6 {
+    color: #2C473E;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  margin-bottom: 5px;
+  background-color: #6A8E4E38;
+  width: 136px;
+  height: 30px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Quiz .quizTexto h3 {
+  font-size: 50px;
+  font-weight: 600;
+  color: #2C473E;
+}
+
+.Quiz .quizTexto hr {
+  width: 86px;
+  height: 5px;
+  background-color: #2C473E;
+  border-radius: 4px;
+}
+
+.Quiz .quizTexto p {
+  font-family: 'Roboto' sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #2C473E;
+}
+
+.Quiz .quizTexto .btn3 {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 40px;
+  background: linear-gradient(90deg, #2C473ECC 20%, #6B813A);
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  width: 182px;
+  height: 54px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  border: 4px #FFFF solid;
+  box-shadow: 3px 6px 8px 0 #00000087;
+}
+
+.Quiz .quizTexto .btn3 .iconQuiz {
+  border: 4px #FFFF solid;
+  width: 57px;
+  height: 55px;
+  border-radius: 50%;
+  box-shadow: 3px 4px 4px 0 #00000087;
+  justify-content: flex-start;
+  position: absolute;
+  left: -5px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url("IconQuiz.svg");
+  background-size: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 .ctaPainel {
     position: relative;
@@ -403,32 +636,56 @@ display: grid;
 }
 
 .ctaTexto h3 {
-    font-size: 2.8rem;
-    font-weight: 700;
+    font-size: 50px;
+    font-weight: 600;
     line-height: 1.2;
     margin: 0 0 10px 0;
 }
 
 .ctaTexto p {
-    font-size: 1rem;
+    font-size: 16px;
     margin-bottom: 18px;
+    font-family: 'Roboto', sans-serif;
     opacity: 0.95;
 }
 
-.ctaTexto a {
-    display: inline-block;
-    padding: 12px 28px;
-    background: #6a8f41;
-    color: white;
-    border-radius: 12px;
-    text-decoration: none;
-    font-weight: 600;
+.ctaPainel .ctaTexto .btn4 {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 40px;
+  background: linear-gradient(90deg, #2C473ECC 20%, #6B813A);
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  width: 187px;
+  height: 50px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  border: 4px #FFFF solid;
+  box-shadow: 3px 6px 8px 0 #00000087;
 }
 
-
-
-
-
+.ctaPainel .ctaTexto .btn4 .iconPainel {
+  border: 4px #FFFF solid;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  box-shadow: 3px 4px 4px 0 #00000087;
+  justify-content: flex-start;
+  position: absolute;
+  left: -5px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url("IconPainel.png");
+  background-size: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 footer {
   background: #2c473e;
